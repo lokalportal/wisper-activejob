@@ -1,10 +1,8 @@
 language: ruby
-before_install:
-  - gem update bundler
-script: rspec spec
-sudo: false
+script: bundle exec rspec
 gemfile:
-  - gemfiles/activejob-4.0
-  - gemfiles/activejob-5.0
+  - gemfiles/activejob_5.gemfile
+  - gemfiles/activejob_6.gemfile
 rvm:
-  - '2.4.0'
+  - 2.6.0
+  - 2.7.0

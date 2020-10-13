@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Provides Wisper with asynchronous event publishing using ActiveJob"
   spec.homepage      = "https://github.com/krisleech/wisper-activejob"
 
-  spec.required_ruby_version = '>= 1.9.3'
+  spec.required_ruby_version = ">= 2.6.0"
 
   spec.license       = "MIT"
 
@@ -20,6 +20,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'wisper'
   spec.add_dependency 'activejob', '>= 4.0.0'
+  spec.add_dependency 'wisper'
 end
