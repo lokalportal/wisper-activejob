@@ -2,6 +2,11 @@
 
 Provides [Wisper](https://github.com/krisleech/wisper) with asynchronous event
 publishing using
+
+Fork Information:
+
+* Added GlobalID to Time and Date, otherwise update changes could not be serialized
+
 [ActiveJob](https://github.com/rails/rails/tree/master/activejob).
 
 [![Gem Version](https://badge.fury.io/rb/wisper-activejob.png)](http://badge.fury.io/rb/wisper-activejob)
