@@ -8,7 +8,7 @@ module Wisper
       Wrapper.perform_later(subscriber.name, event, args)
     end
 
-    class Wrapper < ::ActiveJob::Base
+    class Wrapper < defined?(ApplicationJob) ? ApplicationJob : ::ActiveJob::Base
       queue_as :default
 
       def perform(class_name, event, args)
