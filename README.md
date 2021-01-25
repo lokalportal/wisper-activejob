@@ -6,6 +6,7 @@ publishing using
 Fork Information:
 
 * Added GlobalID to Time and Date, otherwise update changes could not be serialized
+* Allow setting an own Job Wrapper class to e.g. discard jobs with arguments that could not be deserialized.
 
 [ActiveJob](https://github.com/rails/rails/tree/master/activejob).
 
